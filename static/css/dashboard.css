@@ -1,0 +1,37 @@
+body {
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    color: black;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}

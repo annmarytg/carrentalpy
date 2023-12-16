@@ -1,0 +1,69 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking</title>
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+    </head>
+
+</head>
+<body>
+ 
+    <h3>Book 
+        <br><span>Now!</span></h3>
+          
+        <div class="wrapper">
+            <h1>Bookings</h1>
+            <div class="form-container">
+                
+                  
+    <form method="post" action="/book/">
+        {% csrf_token %}
+        <div class="">
+            <label for="pickup-date">Pickup Date</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+        </div>
+        <div class="">
+            <label for="return-date">Pickoff Date</label>
+            <input type="date" id="return-date" name="return-date" required>
+        </div>
+        <div class="">
+            
+            <label for="selectCar">Car</label>
+            <select id="selectCar" name="selectCar" required>
+                <option value="">Select Car</option>
+                <option value="">Hyundai santa fe sport</option>
+                <option value="">Ertiga</option>
+                <option value="">Hyundai creata</option>
+                <option value="">wagonr</option>
+                <option value="">Hyundai i10</option>
+                <option value="">Nissan AK13</option>
+                <option value="">Honda fit</option>
+                <option value="">Hyundai i20</option>
+                <option value="">Swift</option>
+                <option value="">Kia seltos</option>
+                <option value="">Toyota innova crysta</option>
+                <option value="">Grand i1o NIOS</option>
+
+            </select>
+            <div class="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+        </div>
+    </div>
+      
+    
+    <button type="submit">Confirm</button>
+    
+    
+</form>
+</body>
+</html>

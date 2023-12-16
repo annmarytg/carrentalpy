@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ background: #101011;
+ padding: 20px;
+}
+.wrapper{
+    width: 430px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 20px 35px rgb(0, 0, 0,0.1);
+
+}
+h3 {
+    padding: 14px 15px;
+    color: white;
+    font-size: 50px;
+}
+span{
+    color: #f9004d;
+}
+h1{
+    font-size:2rem;
+    color:07001f;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+form input{
+    outline:none;
+    margin-bottom: 10px;
+    background: #e4e4e4;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    padding: 14px 15px;
+    border: 2px solid #f9004d;
+    border-radius: 30px;
+}
+
+button[type="submit"] {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    margin-left: 10px;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: #f9004d;
+}
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.terms{
+    margin-top: 0.2rem;    
+}
+.terms input{
+    height: 1rem;
+    width:1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.terms label{
+    font-size: 0.7rem;
+
+}
+.terms a{
+    color: #f9004d;
+    text-decoration: none;
+}
+.member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color:#636363;
+}
+.member a{
+    color:#f9004d;text-decoration: none;
+}
+.alert {
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert .close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+}
+
+.alert .close:hover,
+.alert .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #f9004d;
+}
+
+.alert-success strong {
+    font-weight: bold;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: white;
+}
+
+.alert-danger strong {
+    font-weight: bold;
+}
+
+
+
+

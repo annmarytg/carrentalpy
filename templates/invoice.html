@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Booking Invoice</h1>
+
+    <div class="product-details">
+      <img src="{{ car.image.url }}" alt="{{ car.model }}">
+      <h3>{{ cart_item.car.model }}</h3>
+      <p>Price per hour: ${{ car.price_per_hour }}</p>
+    </div>
+
+    <div class="button-container">
+      <button id="print-button" class="print-button">Print</button>
+    </div>
+  </div>

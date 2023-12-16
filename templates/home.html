@@ -1,0 +1,112 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>car rental website</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+sins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="car">
+            <nav>
+                <h2 class="logo">Car<span>rental</span></h2>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="/signup/">register</a></li>
+                    <li><a href="/signin/">login</a></li>
+                    <li><a href="/contactus/">contact us</a></li>
+                </ul>
+                <a href="/base/" class="btn">book your car</a>
+            
+            </nav>
+            <div class="content">
+                <h4>welcome to our</h4>
+                <h1>car<span>rental services</span></h1>
+                <h3>Start your journey today!</h3>
+                    <div class="newsletter">
+                        <form>
+                            
+                                <input type="email" name="email"placeholder="Enter your email" required>
+                                <input type="submit" name="submit" value="subscribe">
+                            
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+        <section class="about">
+            <div class="main">
+                <img src="{% static 'images/car3.jpg' %}">
+                <div class="about-text">
+                    <a name=about>
+                    <h2>about us</h2>
+                    <h5>Your trip<span>Your way!</span></h5>
+                    <p>Car rental services are a convenient way to get around without using your vehicle or resorting to public transport. With a car rental, you can explore a city, take a much-needed road trip and make spontaneous getaways possible. Gone are the days when owning a car was a necessity.
+                        Today, choosing a car hire gives you all the mobility and privacy you need, without digging deep into your pockets.</p>
+                    <button type="button">Go</button></a>
+                </div>
+            </div>
+        </section>
+        <div class="service">
+            <div class="title">
+                <h2>our services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>why you hire us</h5>
+                    <div class="pra">
+                        <p>Affordable prices and
+                        Helpful customer care</p>
+                        <p style="text-align: center;">
+                            <a class="button" href='#'>read more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user"></i>
+                    <h5>Reviews</h5>
+                    <div class="pra">
+                        <p>Clean cars. Flexible bookings. Socially distant rental counters.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href='#'>read more</a>
+                        </p>
+                    </div>
+            </div>
+        
+        
+        <div class="card">
+            <i class="fas fa-bell"></i>
+            <h5>subscribe</h5>
+            <div class="pra">
+                <p>Receive Exclusive Offers and Promotions</p>
+                <p style="text-align: center;">
+                    <a class="button" href='#'>read more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+        <div class="contactus">
+            <h3>contact us</h3>
+            <p>supports@carrental.in</p>
+            <a class="button-two"href="#">Get in touch</a></a>
+        </div>
+    </div>
+    <footer>
+        <p>Know more about us</p>
+        <p>Follow us</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">&copy;2023 CarRental. All rights reserved.</p>
+    </footer>
+            </body>
+    </html>

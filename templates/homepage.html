@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="search-bar">
+        <form action="" method="GET">
+            <input type="text" name="q" placeholder="Search for a car" value="{{ search_query }}">
+            <button type="submit">Search</button>
+        </form>
+        <a href="{% url 'cart' %}" class="cart_btn" style="text-decoration: none;"><i class="fa fa-shopping-cart" style="font-size:32px;color: #4267B2;" ></i></a>
+    </div>
+
+    <div class="product-container">
+        {% if cars %}
+        {% for car in cars %}
+        <div class="product-card">
+            <img src="{{ car.image.url }}" alt="{{ car.model }}">
+            <h3>{{ car.model }}</h3>
+            <p>Price per hour: ${{ car.price_per_hour }}</p>
+            <a href="{% url 'add_to_cart' pk=car.pk %}"><button>Rent It</button></a>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>No cars found.</p>
+        {% endif %}
+    </div>
+</div>
